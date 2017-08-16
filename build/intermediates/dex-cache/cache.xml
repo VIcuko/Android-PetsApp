@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/PetsApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/PetsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_213898d13a6fab3c6edb4358d0cccb13aa792235/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iTurbo/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/PetsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_ee851b195937d65a9dc398ee88c1114f195dc4a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iTurbo/.android/build-cache/b86018b37231077050aff9c907e0cb6913b6947f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/PetsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_75e619e965cd658a3693275b12bfbf1a3b25fdce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iTurbo/.android/build-cache/b86018b37231077050aff9c907e0cb6913b6947f/output/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/PetsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_0a8df205ec998e257e4161ae707264c8d2b3af8d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iTurbo/.android/build-cache/36c3b245549f0890a8309158ccd3a4daccc06e19/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/PetsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4388c89e7a3dda0df48ab2e9144ac34d2a487ed1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iTurbo/.android/build-cache/00a30f98ef8d81eeb538510f61b0fa6524f69761/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/PetsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_df0e5c44777711d289ef2958fee67b9269ace352/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iTurbo/.android/build-cache/9119ac429bb5d0e3fa4cf24ebcb4928f7a873fec/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/PetsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_57c224e96b1810e2121ca5fc3ac0f4cc210d35dc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iTurbo/.android/build-cache/7fec2c1ecb40dfe4ea4f1dc6d7aa0b6c43fb1f8e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/PetsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fe2c8a048d69462c5bef49f454206368ed5986d1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/PetsApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0951a5996079b6a02a6dd2216640ccefc6e81450">
+        <dex dex="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/PetsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_965ff86a268a3fe810ffff8a2db3232c9fa25ec1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iTurbo/.android/build-cache/c465fde16aa585ca83cd454cfda33165fcddd949/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/PetsApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_73d351a18038fb096a207b542b82c947fe345be5/classes.dex" />
+    </item>
+
+</items>
