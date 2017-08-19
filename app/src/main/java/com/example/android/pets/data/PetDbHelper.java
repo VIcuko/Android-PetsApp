@@ -9,19 +9,34 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 public class PetDbHelper extends SQLiteOpenHelper {
+    // If you change the database schema, you must increment the database version.
+    public static final int DATABASE_VERSION = 1;
 
+    public static final String DATABASE_NAME = "Shelter.db";
+
+    private static final String SQL_CREATE_ENTRIES =
+            "CREATE TABLE " + PetContract.PetsEntry.TABLE_NAME+ " (" +
+                    PetContract.PetsEntry._ID + " INTEGER PRIMARY KEY," +
+                    PetContract.PetsEntry.COLUMN_PET_NAME + " TEXT," +
+                    PetContract.PetsEntry.COLUMN_PET_BREED + " TEXT," +
+                    PetContract.PetsEntry.COLUMN_PET_GENDER + " TEXT," +
+                    PetContract.PetsEntry.COLUMN_PET_WEIGHT + " TEXT)";
+
+    private static final String SQL_DELETE_ENTRIES =
+            "DROP TABLE IF EXISTS " + PetContract.PetsEntry.TABLE_NAME;
 
     public PetDbHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     @Override
-    public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
+    public void onCreate(SQLiteDatabase db) {
+        db.execSQL(SQL_CREATE_ENTRIES);
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
+    public void onUpgrade(SQLiteDatabase db, int i, int i1) {
+        db.execSQL(SQL_DELETE_ENTRIES);
+        onCreate(db);
     }
 }
