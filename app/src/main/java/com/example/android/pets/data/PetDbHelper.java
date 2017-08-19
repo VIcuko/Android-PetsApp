@@ -4,6 +4,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.example.android.pets.data.PetContract.PetEntry;
+
 /**
  * Created by Vicuko on 19/8/17.
  */
@@ -15,17 +17,17 @@ public class PetDbHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "Shelter.db";
 
     private static final String SQL_CREATE_ENTRIES =
-            "CREATE TABLE " + PetContract.PetsEntry.TABLE_NAME+ " (" +
-                    PetContract.PetsEntry._ID + " INTEGER PRIMARY KEY," +
-                    PetContract.PetsEntry.COLUMN_PET_NAME + " TEXT," +
-                    PetContract.PetsEntry.COLUMN_PET_BREED + " TEXT," +
-                    PetContract.PetsEntry.COLUMN_PET_GENDER + " TEXT," +
-                    PetContract.PetsEntry.COLUMN_PET_WEIGHT + " TEXT)";
+            "CREATE TABLE " + PetEntry.TABLE_NAME+ " (" +
+                    PetEntry._ID + " INTEGER PRIMARY KEY," +
+                    PetEntry.COLUMN_PET_NAME + " TEXT," +
+                    PetEntry.COLUMN_PET_BREED + " TEXT," +
+                    PetEntry.COLUMN_PET_GENDER + " TEXT," +
+                    PetEntry.COLUMN_PET_WEIGHT + " TEXT)";
 
     private static final String SQL_DELETE_ENTRIES =
-            "DROP TABLE IF EXISTS " + PetContract.PetsEntry.TABLE_NAME;
+            "DROP TABLE IF EXISTS " + PetEntry.TABLE_NAME;
 
-    public PetDbHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+    public PetDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
