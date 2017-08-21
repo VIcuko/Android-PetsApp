@@ -35,8 +35,8 @@ import com.example.android.pets.data.PetDbHelper;
  */
 public class CatalogActivity extends AppCompatActivity {
 
-    PetDbHelper mDbHelper;
-    SQLiteDatabase db;
+    private PetDbHelper mDbHelper;
+    private SQLiteDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,6 +89,7 @@ public class CatalogActivity extends AppCompatActivity {
         values.put(PetEntry.COLUMN_PET_WEIGHT, weight);
 
         long newRowId = db.insert(PetEntry.TABLE_NAME, null, values);
+        displayDatabaseInfo();
     }
 
     private void displayDatabaseInfo() {
