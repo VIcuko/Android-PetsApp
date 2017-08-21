@@ -121,7 +121,7 @@ public class CatalogActivity extends AppCompatActivity {
         };
 
         // Filter results WHERE "title" = 'My Title'
-//        String selection = PetEntry.COLUMN_NAME_TITLE + " = ?";
+        String selection = PetEntry.COLUMN_PET_WEIGHT + " > ?";
 //        String[] selectionArgs = { "My Title" };
 
         // How you want the results sorted in the resulting Cursor
