@@ -93,7 +93,7 @@ public class CatalogActivity extends AppCompatActivity {
 
         long newRowId = db.insert(PetEntry.TABLE_NAME, null, values);
 
-        Log.v("CatalogActivity", "New row ID " + newRowId);
+        Log.i("CatalogActivity", "New row ID " + newRowId);
     }
 
     private void displayDatabaseInfo() {
