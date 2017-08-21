@@ -147,10 +147,11 @@ public class EditorActivity extends AppCompatActivity {
     private void insertPet(){
         SQLiteDatabase db = mDbHelper.getWritableDatabase();
 
-        String petName = mNameEditText.getText().toString().trim();
-        String petBreed = mBreedEditText.getText().toString().trim();
+        String petName = !mNameEditText.getText().toString().trim().isEmpty() ? mNameEditText.getText().toString().trim() : null;
+        String petBreed = !mBreedEditText.getText().toString().trim().isEmpty() ? mBreedEditText.getText().toString().trim() : null;
         int petGender = mGender;
-        int petWeight = Integer.parseInt(mWeightEditText.getText().toString().trim());
+        String weightString = !mWeightEditText.getText().toString().trim().isEmpty() ? mWeightEditText.getText().toString().trim() : "0";
+        int petWeight = Integer.parseInt(weightString);
 
         ContentValues values = new ContentValues();
         values.put(PetEntry.COLUMN_PET_BREED, petName);
@@ -162,11 +163,11 @@ public class EditorActivity extends AppCompatActivity {
 
         Log.i("EditorActivity", "New row ID " + newRowId);
 
-        if (newRowId >= 0){
-            Toast.makeText(this, "Pet saved with id: " + newRowId, Toast.LENGTH_LONG).show();
+        if (newRowId == -1){
+            Toast.makeText(this, "Error with saving pet", Toast.LENGTH_LONG).show();
         }
         else{
-            Toast.makeText(this, "Error with saving pet", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Pet saved with id: " + newRowId, Toast.LENGTH_LONG).show();
         }
 
     }
