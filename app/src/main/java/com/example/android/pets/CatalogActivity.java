@@ -22,6 +22,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -36,7 +37,6 @@ import com.example.android.pets.data.PetDbHelper;
 public class CatalogActivity extends AppCompatActivity {
 
     private PetDbHelper mDbHelper;
-    private SQLiteDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +52,8 @@ public class CatalogActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         mDbHelper = new PetDbHelper(this);
-        db = mDbHelper.getWritableDatabase();
         displayDatabaseInfo();
     }
 
@@ -71,7 +71,8 @@ public class CatalogActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             // Respond to a click on the "Insert dummy data" menu option
             case R.id.action_insert_dummy_data:
-                insertPet("Toto", "Terrier", 1, 7);
+                insertPet();
+                displayDatabaseInfo();
                 return true;
             // Respond to a click on the "Delete all entries" menu option
             case R.id.action_delete_all_entries:
@@ -81,15 +82,18 @@ public class CatalogActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void insertPet(String name, String breed, int gender, int weight){
+    private void insertPet(){
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
         ContentValues values = new ContentValues();
-        values.put(PetEntry.COLUMN_PET_BREED, breed);
-        values.put(PetEntry.COLUMN_PET_GENDER, gender);
-        values.put(PetEntry.COLUMN_PET_NAME, name);
-        values.put(PetEntry.COLUMN_PET_WEIGHT, weight);
+        values.put(PetEntry.COLUMN_PET_BREED, "Toto");
+        values.put(PetEntry.COLUMN_PET_GENDER, "Terrier");
+        values.put(PetEntry.COLUMN_PET_NAME, PetEntry.GENDER_MALE);
+        values.put(PetEntry.COLUMN_PET_WEIGHT, 7);
 
         long newRowId = db.insert(PetEntry.TABLE_NAME, null, values);
-        displayDatabaseInfo();
+
+        Log.v("CatalogActivity", "New row ID " + newRowId);
     }
 
     private void displayDatabaseInfo() {
