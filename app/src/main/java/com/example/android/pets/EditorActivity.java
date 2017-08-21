@@ -135,10 +135,10 @@ public class EditorActivity extends AppCompatActivity {
     }
 
     private void insertPet(){
-        String petName = mNameEditText.getText().toString();
-        String petBreed = mBreedEditText.getText().toString();
+        String petName = mNameEditText.getText().toString().trim();
+        String petBreed = mBreedEditText.getText().toString().trim();
         int petGender = mGender;
-        int petWeight = Integer.parseInt(mWeightEditText.getText().toString());
+        int petWeight = Integer.parseInt(mWeightEditText.getText().toString().trim());
 
     }
 }
