@@ -11,6 +11,7 @@ import android.net.Uri;
 
 public class PetProvider extends ContentProvider {
 
+    /** Database helper object **/
     private PetDbHelper mDbHelper;
 
     /** Tag for the log messages */
