@@ -33,6 +33,9 @@ public final class PetContract {
 
     public static abstract class PetEntry implements BaseColumns {
 
+        public static final String CONTENT_LIST_TYPE = "vnd.android.cursor.dir/com.example.android.pet/pets";
+        public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/com.example.android.pet/pets";
+
         public static final String TABLE_NAME = "pets";
 
         /** The content URI to access the pet data in the provider */
