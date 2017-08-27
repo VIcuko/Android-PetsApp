@@ -10,8 +10,6 @@ import android.net.Uri;
 
 import com.example.android.pets.data.PetContract.PetEntry;
 
-import static android.R.attr.id;
-
 /**
  * Created by Vicuko on 22/8/17.
  */
@@ -133,6 +131,14 @@ public class PetProvider extends ContentProvider {
         // Once we know the ID of the new row in the table,
         // return the new URI with the ID appended to the end of it
         return ContentUris.withAppendedId(uri, newRowId);
+    }
+
+    /**
+     * Updates the data at the given selection and selection arguments, with the new ContentValues.
+     */
+    @Override
+    public int update(Uri uri, ContentValues contentValues, String selection, String[] selectionArgs) {
+        return 0;
     }
 
     /**
