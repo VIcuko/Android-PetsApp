@@ -125,9 +125,9 @@ public class CatalogActivity extends AppCompatActivity {
         Cursor cursor = getContentResolver().query(
                 PetEntry.CONTENT_URI,                     // The table to query
                 projection,                               // The columns to return
-                null,                                // The columns for the WHERE clause
-                null,                            // The values for the WHERE clause
-                null                                 // The sort order
+                null,                                     // Selection criteria
+                null,                                     // Selection criteria
+                null                                      // The sort order
         );
 
         TextView displayView = (TextView) findViewById(R.id.text_view_pet);
