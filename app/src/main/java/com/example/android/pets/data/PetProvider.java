@@ -110,23 +110,6 @@ public class PetProvider extends ContentProvider {
     @Override
     public Uri insert(Uri uri, ContentValues contentValues) {
 
-        String name = contentValues.getAsString(PetEntry.COLUMN_PET_NAME);
-        String breed = contentValues.getAsString(PetEntry.COLUMN_PET_BREED);
-        int gender = contentValues.getAsInteger(PetEntry.COLUMN_PET_GENDER);
-        int weight = contentValues.getAsInteger(PetEntry.COLUMN_PET_WEIGHT);
-
-        if (name == null || name.isEmpty()){
-            throw new IllegalArgumentException("Pet requires a name");
-        }
-
-        if (breed == null || breed.isEmpty()){
-            throw new IllegalArgumentException("Pet requires a breed");
-        }
-
-        if (weight <= 0){
-            throw new IllegalArgumentException("Pet requires a weight");
-        }
-
         final int match = sUriMatcher.match(uri);
         switch (match) {
             case PETS:
@@ -141,6 +124,22 @@ public class PetProvider extends ContentProvider {
      * for that specific row in the database.
      */
     private Uri insertPet(Uri uri, ContentValues values) {
+
+        String name = values.getAsString(PetEntry.COLUMN_PET_NAME);
+        String breed = values.getAsString(PetEntry.COLUMN_PET_BREED);
+        int weight = values.getAsInteger(PetEntry.COLUMN_PET_WEIGHT);
+
+        if (name == null || name.isEmpty()) {
+            throw new IllegalArgumentException("Pet requires a name");
+        }
+
+        if (breed == null || breed.isEmpty()) {
+            throw new IllegalArgumentException("Pet requires a breed");
+        }
+
+        if (weight <= 0) {
+            throw new IllegalArgumentException("Pet requires a weight");
+        }
 
         // Get readable database
         SQLiteDatabase database = mDbHelper.getReadableDatabase();
@@ -161,6 +160,7 @@ public class PetProvider extends ContentProvider {
      */
     @Override
     public int update(Uri uri, ContentValues contentValues, String selection, String[] selectionArgs) {
+
         final int match = sUriMatcher.match(uri);
         switch (match) {
             case PETS:
@@ -170,7 +170,7 @@ public class PetProvider extends ContentProvider {
                 // so we know which row to update. Selection will be "_id=?" and selection
                 // arguments will be a String array containing the actual ID.
                 selection = PetEntry._ID + "=?";
-                selectionArgs = new String[] { String.valueOf(ContentUris.parseId(uri)) };
+                selectionArgs = new String[]{String.valueOf(ContentUris.parseId(uri))};
                 return updatePet(uri, contentValues, selection, selectionArgs);
             default:
                 throw new IllegalArgumentException("Update is not supported for " + uri);
@@ -183,16 +183,44 @@ public class PetProvider extends ContentProvider {
      * Return the number of rows that were successfully updated.
      */
     private int updatePet(Uri uri, ContentValues values, String selection, String[] selectionArgs) {
+
+        if (values.size() == 0) {
+            return 0;
+        }
+
+        String name = values.getAsString(PetEntry.COLUMN_PET_NAME);
+        String breed = values.getAsString(PetEntry.COLUMN_PET_BREED);
+        int weight = values.getAsInteger(PetEntry.COLUMN_PET_WEIGHT);
+
+        if (values.containsKey(PetEntry.COLUMN_PET_NAME)) {
+            if (name == null || name.isEmpty()) {
+                throw new IllegalArgumentException("Pet requires a name");
+            }
+        }
+
+        if (values.containsKey(PetEntry.COLUMN_PET_BREED)) {
+            if (breed == null || breed.isEmpty()) {
+                throw new IllegalArgumentException("Pet requires a breed");
+            }
+        }
+
+        if (values.containsKey(PetEntry.COLUMN_PET_GENDER)) {
+            Integer gender = values.getAsInteger(PetEntry.COLUMN_PET_GENDER);
+            if (gender == null || !PetEntry.isValidGender(gender)) {
+                throw new IllegalArgumentException("Pet requires valid gender");
+            }
+        }
+
+        if (values.containsKey(PetEntry.COLUMN_PET_WEIGHT)) {
+        if (weight < 0) {
+                throw new IllegalArgumentException("Pet requires a weight");
+            }
+        }
+
         // Get readable database
         SQLiteDatabase database = mDbHelper.getReadableDatabase();
 
-        int affectedRows = database.update(uri.toString(), values, selection, selectionArgs);
-
-        if (affectedRows <= 0) {
-            Log.e(LOG_TAG, "No rows were updated for " + uri);
-        }
-
-        return affectedRows;
+        return database.update(uri.toString(), values, selection, selectionArgs);
     }
 
     /**
