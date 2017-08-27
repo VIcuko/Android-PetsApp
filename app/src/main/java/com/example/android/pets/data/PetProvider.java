@@ -183,11 +183,16 @@ public class PetProvider extends ContentProvider {
      * Return the number of rows that were successfully updated.
      */
     private int updatePet(Uri uri, ContentValues values, String selection, String[] selectionArgs) {
+        // Get readable database
+        SQLiteDatabase database = mDbHelper.getReadableDatabase();
 
-        // TODO: Update the selected pets in the pets database table with the given ContentValues
+        int affectedRows = database.update(uri.toString(), values, selection, selectionArgs);
 
-        // TODO: Return the number of rows that were affected
-        return 0;
+        if (affectedRows <= 0) {
+            Log.e(LOG_TAG, "No rows were updated for " + uri);
+        }
+
+        return affectedRows;
     }
 
     /**
