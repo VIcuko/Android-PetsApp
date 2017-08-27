@@ -9,16 +9,23 @@ import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 
 import com.example.android.pets.data.PetContract.PetEntry;
+
+import static android.R.attr.id;
+
 /**
  * Created by Vicuko on 22/8/17.
  */
 
 public class PetProvider extends ContentProvider {
 
-    /** URI matcher code for the content URI for the pets table **/
+    /**
+     * URI matcher code for the content URI for the pets table
+     **/
     private static final int PETS = 100;
 
-    /** URI matcher code for the content URI for a single PET in the pets table **/
+    /**
+     * URI matcher code for the content URI for a single PET in the pets table
+     **/
     private static final int PET_ID = 101;
 
     /**
@@ -28,17 +35,20 @@ public class PetProvider extends ContentProvider {
      */
     private static final UriMatcher sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 
-    static
-    {
+    static {
         //These are all the possible paths we are going to deal when receiving a call to the database.
         sUriMatcher.addURI(PetContract.CONTENT_AUTHORITY, PetContract.PATH_PETS, PETS);
         sUriMatcher.addURI(PetContract.CONTENT_AUTHORITY, PetContract.PATH_PETS + "/#", PET_ID);
     }
 
-    /** Database helper object **/
+    /**
+     * Database helper object
+     **/
     private PetDbHelper mDbHelper;
 
-    /** Tag for the log messages */
+    /**
+     * Tag for the log messages
+     */
     public static final String LOG_TAG = PetProvider.class.getSimpleName();
 
     /**
@@ -82,7 +92,7 @@ public class PetProvider extends ContentProvider {
                 // arguments that will fill in the "?". Since we have 1 question mark in the
                 // selection, we have 1 String in the selection arguments' String array.
                 selection = PetEntry._ID + "=?";
-                selectionArgs = new String[] { String.valueOf(ContentUris.parseId(uri)) };
+                selectionArgs = new String[]{String.valueOf(ContentUris.parseId(uri))};
 
                 // This will perform a query on the pets table where the _id equals 3 to return a
                 // Cursor containing that row of the table.
@@ -100,15 +110,29 @@ public class PetProvider extends ContentProvider {
      */
     @Override
     public Uri insert(Uri uri, ContentValues contentValues) {
-        return null;
+        final int match = sUriMatcher.match(uri);
+        switch (match) {
+            case PETS:
+                return insertPet(uri, contentValues);
+            default:
+                throw new IllegalArgumentException("Insertion is not supported for " + uri);
+        }
     }
 
     /**
-     * Updates the data at the given selection and selection arguments, with the new ContentValues.
+     * Insert a pet into the database with the given content values. Return the new content URI
+     * for that specific row in the database.
      */
-    @Override
-    public int update(Uri uri, ContentValues contentValues, String selection, String[] selectionArgs) {
-        return 0;
+    private Uri insertPet(Uri uri, ContentValues values) {
+
+        // Get readable database
+        SQLiteDatabase database = mDbHelper.getReadableDatabase();
+
+        long newRowId = database.insert(PetEntry.TABLE_NAME, null, values);
+
+        // Once we know the ID of the new row in the table,
+        // return the new URI with the ID appended to the end of it
+        return ContentUris.withAppendedId(uri, newRowId);
     }
 
     /**
