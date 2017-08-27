@@ -89,9 +89,9 @@ public class CatalogActivity extends AppCompatActivity {
 
     private void insertPet(){
         ContentValues values = new ContentValues();
-        values.put(PetEntry.COLUMN_PET_BREED, "Toto");
-        values.put(PetEntry.COLUMN_PET_GENDER, "Terrier");
-        values.put(PetEntry.COLUMN_PET_NAME, PetEntry.GENDER_MALE);
+        values.put(PetEntry.COLUMN_PET_NAME, "Toto");
+        values.put(PetEntry.COLUMN_PET_BREED, "Terrier");
+        values.put(PetEntry.COLUMN_PET_GENDER, PetEntry.GENDER_MALE);
         values.put(PetEntry.COLUMN_PET_WEIGHT, 7);
 
         Uri newUri = getContentResolver().insert(PetEntry.CONTENT_URI, values);
