@@ -109,6 +109,24 @@ public class PetProvider extends ContentProvider {
      */
     @Override
     public Uri insert(Uri uri, ContentValues contentValues) {
+
+        String name = contentValues.getAsString(PetEntry.COLUMN_PET_NAME);
+        String breed = contentValues.getAsString(PetEntry.COLUMN_PET_BREED);
+        int gender = contentValues.getAsInteger(PetEntry.COLUMN_PET_GENDER);
+        int weight = contentValues.getAsInteger(PetEntry.COLUMN_PET_WEIGHT);
+
+        if (name == null || name.isEmpty()){
+            throw new IllegalArgumentException("Pet requires a name");
+        }
+
+        if (breed == null || breed.isEmpty()){
+            throw new IllegalArgumentException("Pet requires a breed");
+        }
+
+        if (weight <= 0){
+            throw new IllegalArgumentException("Pet requires a weight");
+        }
+
         final int match = sUriMatcher.match(uri);
         switch (match) {
             case PETS:
