@@ -65,7 +65,7 @@ public class CatalogActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onStart(){
+    public void onStart() {
         super.onStart();
         displayDatabaseInfo();
     }
@@ -87,7 +87,7 @@ public class CatalogActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void insertPet(){
+    private void insertPet() {
         ContentValues values = new ContentValues();
         values.put(PetEntry.COLUMN_PET_NAME, "Toto");
         values.put(PetEntry.COLUMN_PET_BREED, "Terrier");
@@ -126,7 +126,13 @@ public class CatalogActivity extends AppCompatActivity {
         );
 
         // Find the ListView which will be populated with the pet data
-                ListView petListView = (ListView) findViewById(R.id.list_view_pet);
+        ListView petListView = (ListView) findViewById(R.id.list_view_pet);
+
+        // Setup an Adapter to create a list item for each row of pet data in the Cursor.
+        PetCursorAdapter adapter = new PetCursorAdapter(this, cursor);
+
+        // Attach the adapter to the ListView.
+        petListView.setAdapter(adapter);
 
     }
 }
