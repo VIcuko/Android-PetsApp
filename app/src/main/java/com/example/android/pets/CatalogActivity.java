@@ -31,7 +31,6 @@ import android.view.View;
 import android.widget.ListView;
 
 import com.example.android.pets.data.PetContract.PetEntry;
-import com.example.android.pets.data.PetDbHelper;
 
 /**
  * Displays list of pets that were entered and stored in the app.
@@ -41,8 +40,6 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
     private static final int PET_LOADER = 0;
 
     PetCursorAdapter mCursorAdapter;
-
-    private PetDbHelper mDbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +69,8 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
         // Attach the adapter to the ListView.
         petListView.setAdapter(mCursorAdapter);
 
-        mDbHelper = new PetDbHelper(this);
+        // Kick off loader
+        getLoaderManager().initLoader(PET_LOADER,null,this);
     }
 
     @Override
