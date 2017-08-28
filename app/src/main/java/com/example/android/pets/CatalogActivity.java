@@ -25,6 +25,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.android.pets.data.PetContract.PetEntry;
@@ -125,7 +126,8 @@ public class CatalogActivity extends AppCompatActivity {
                 null                                      // The sort order
         );
 
-        TextView displayView = (TextView) findViewById(R.id.text_view_pet);
+        // Find the ListView which will be populated with the pet data
+                ListView petListView = (ListView) findViewById(R.id.list_view_pet);
 
         try {
             // Create a header in the Text View that looks like this:
