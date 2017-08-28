@@ -104,49 +104,6 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
         Uri newUri = getContentResolver().insert(PetEntry.CONTENT_URI, values);
     }
 
-    private void displayDatabaseInfo() {
-
-        // Define a projection that specifies which columns from the database
-        // you will actually use after this query.
-        String[] projection = {
-                PetEntry._ID,
-                PetEntry.COLUMN_PET_NAME,
-                PetEntry.COLUMN_PET_BREED,
-                PetEntry.COLUMN_PET_GENDER,
-                PetEntry.COLUMN_PET_WEIGHT
-        };
-
-        // Filter results WHERE "title" = 'My Title'
-        String selection = PetEntry.COLUMN_PET_WEIGHT + " > ?";
-//        String[] selectionArgs = { "My Title" };
-
-        // How you want the results sorted in the resulting Cursor
-//        String sortOrder =
-//                PetEntry.COLUMN_NAME_SUBTITLE + " DESC";
-
-        Cursor cursor = getContentResolver().query(
-                PetEntry.CONTENT_URI,                     // The table to query
-                projection,                               // The columns to return
-                null,                                     // Selection criteria
-                null,                                     // Selection criteria
-                null                                      // The sort order
-        );
-
-        // Find the ListView which will be populated with the pet data
-        ListView petListView = (ListView) findViewById(R.id.list_view_pet);
-
-        // Find and set empty view on the ListView, so that it only shows when the list has 0 items.
-        View emptyView = findViewById(R.id.empty_view);
-        petListView.setEmptyView(emptyView);
-
-        // Setup an Adapter to create a list item for each row of pet data in the Cursor.
-        PetCursorAdapter adapter = new PetCursorAdapter(this, cursor);
-
-        // Attach the adapter to the ListView.
-        petListView.setAdapter(adapter);
-
-    }
-
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
 
@@ -154,7 +111,7 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
         String[] projection = {
                 PetEntry._ID,
                 PetEntry.COLUMN_PET_NAME,
-                PetEntry.COLUMN_PET_BREED };
+                PetEntry.COLUMN_PET_BREED};
 
         //This loader will execute the ContentProvider's query method on a background thread
         return new CursorLoader(this,
