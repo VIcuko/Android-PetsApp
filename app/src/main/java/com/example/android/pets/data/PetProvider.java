@@ -231,6 +231,9 @@ public class PetProvider extends ContentProvider {
         // Get readable database
         SQLiteDatabase database = mDbHelper.getReadableDatabase();
 
+        // Notify all listeners that the data has changed for the pet content URI
+        getContext().getContentResolver().notifyChange(uri, null);
+
         return database.update(uri.toString(), values, selection, selectionArgs);
     }
 
