@@ -167,8 +167,10 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
     }
 
     @Override
-    public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
-
+    public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+        // Swap the new cursor in.  (The framework will take care of closing the
+        // old cursor once we return.)
+        mCursorAdapter.swapCursor(data);
     }
 
     @Override
