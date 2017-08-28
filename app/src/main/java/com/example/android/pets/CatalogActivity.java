@@ -39,6 +39,8 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
 
     private static final int PET_LOADER = 0;
 
+    PetCursorAdapter mCursorAdapter;
+
     private PetDbHelper mDbHelper;
 
     @Override
