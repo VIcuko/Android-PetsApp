@@ -11,7 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="742a9ff9-d9a6-4d10-ab5d-90a804b1ab66" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/CatalogActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/CatalogActivity.java" />
     </list>
     <ignored path="PetsApp.iws" />
@@ -48,11 +47,13 @@
       <file leaf-file-name="CatalogActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/CatalogActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="36" column="103" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
+            <state relative-caret-position="204">
+              <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1503948408000" expanded="true" signature="4032:4072" ph="..." />
+                <element signature="e#5410#5411#0" expanded="true" />
+                <element signature="e#5437#5438#0" expanded="true" />
+                <marker date="1503948457000" expanded="true" signature="4063:4103" ph="..." />
               </folding>
             </state>
           </provider>
@@ -2420,7 +2421,9 @@
           <caret line="38" column="34" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1503948408000" expanded="true" signature="4032:4072" ph="..." />
+            <element signature="e#5410#5411#0" expanded="true" />
+            <element signature="e#5437#5438#0" expanded="true" />
+            <marker date="1503948457000" expanded="true" signature="4063:4103" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2477,7 +2480,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1503948408000" expanded="true" signature="4032:4072" ph="..." />
+            <element signature="e#5410#5411#0" expanded="true" />
+            <element signature="e#5437#5438#0" expanded="true" />
+            <marker date="1503948457000" expanded="true" signature="4063:4103" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2744,11 +2749,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/CatalogActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="36" column="103" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
+        <state relative-caret-position="204">
+          <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1503948408000" expanded="true" signature="4032:4072" ph="..." />
+            <element signature="e#5410#5411#0" expanded="true" />
+            <element signature="e#5437#5438#0" expanded="true" />
+            <marker date="1503948457000" expanded="true" signature="4063:4103" ph="..." />
           </folding>
         </state>
       </provider>
