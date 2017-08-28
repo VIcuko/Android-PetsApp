@@ -28,7 +28,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ListView;
 
 import com.example.android.pets.data.PetContract.PetEntry;
 import com.example.android.pets.data.PetDbHelper;
@@ -60,7 +59,6 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
         });
 
         mDbHelper = new PetDbHelper(this);
-        displayDatabaseInfo();
     }
 
     @Override
@@ -72,19 +70,12 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
     }
 
     @Override
-    public void onStart() {
-        super.onStart();
-        displayDatabaseInfo();
-    }
-
-    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // User clicked on a menu option in the app bar overflow menu
         switch (item.getItemId()) {
             // Respond to a click on the "Insert dummy data" menu option
             case R.id.action_insert_dummy_data:
                 insertPet();
-                displayDatabaseInfo();
                 return true;
             // Respond to a click on the "Delete all entries" menu option
             case R.id.action_delete_all_entries:
