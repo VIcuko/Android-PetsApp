@@ -47,11 +47,11 @@
       <file leaf-file-name="CatalogActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/CatalogActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="172" column="40" selection-start-line="172" selection-start-column="40" selection-end-line="172" selection-end-column="40" />
+            <state relative-caret-position="399">
+              <caret line="180" column="38" selection-start-line="180" selection-start-column="38" selection-end-line="180" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1503949233000" expanded="true" signature="4184:4224" ph="..." />
+                <marker date="1503949285000" expanded="true" signature="4184:4224" ph="..." />
               </folding>
             </state>
           </provider>
@@ -2419,7 +2419,7 @@
           <caret line="38" column="34" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1503949233000" expanded="true" signature="4184:4224" ph="..." />
+            <marker date="1503949285000" expanded="true" signature="4184:4224" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2476,7 +2476,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1503949233000" expanded="true" signature="4184:4224" ph="..." />
+            <marker date="1503949285000" expanded="true" signature="4184:4224" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2743,11 +2743,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/CatalogActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="172" column="40" selection-start-line="172" selection-start-column="40" selection-end-line="172" selection-end-column="40" />
+        <state relative-caret-position="399">
+          <caret line="180" column="38" selection-start-line="180" selection-start-column="38" selection-end-line="180" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1503949233000" expanded="true" signature="4184:4224" ph="..." />
+            <marker date="1503949285000" expanded="true" signature="4184:4224" ph="..." />
           </folding>
         </state>
       </provider>
