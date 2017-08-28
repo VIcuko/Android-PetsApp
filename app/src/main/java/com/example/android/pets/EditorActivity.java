@@ -16,6 +16,7 @@
 package com.example.android.pets;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -40,16 +41,24 @@ public class EditorActivity extends AppCompatActivity {
 
     private PetDbHelper mDbHelper;
 
-    /** EditText field to enter the pet's name */
+    /**
+     * EditText field to enter the pet's name
+     */
     private EditText mNameEditText;
 
-    /** EditText field to enter the pet's breed */
+    /**
+     * EditText field to enter the pet's breed
+     */
     private EditText mBreedEditText;
 
-    /** EditText field to enter the pet's weight */
+    /**
+     * EditText field to enter the pet's weight
+     */
     private EditText mWeightEditText;
 
-    /** EditText field to enter the pet's gender */
+    /**
+     * EditText field to enter the pet's gender
+     */
     private Spinner mGenderSpinner;
 
     /**
@@ -62,6 +71,16 @@ public class EditorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editor);
+
+        Intent intent = getIntent();
+        Uri currentPetUri = intent.getData();
+
+        if (currentPetUri == null) {
+            setTitle(getString(R.string.editor_activity_title_add_pet));
+        } else {
+            setTitle(getString(R.string.editor_activity_title_edit_pet));
+        }
+
 
         // Find all relevant views that we will need to read user input from
         mNameEditText = (EditText) findViewById(R.id.edit_pet_name);
@@ -143,7 +162,7 @@ public class EditorActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void insertPet(){
+    private void insertPet() {
         String petName = !mNameEditText.getText().toString().trim().isEmpty() ? mNameEditText.getText().toString().trim() : null;
         String petBreed = !mBreedEditText.getText().toString().trim().isEmpty() ? mBreedEditText.getText().toString().trim() : null;
         int petGender = mGender;
@@ -158,12 +177,11 @@ public class EditorActivity extends AppCompatActivity {
 
         Uri newUri = getContentResolver().insert(PetEntry.CONTENT_URI, values);
 
-        if (newUri == null){
+        if (newUri == null) {
             // If the new content URI is null, then there was an error with insertion.
             Toast.makeText(this, getString(R.string.editor_insert_pet_failed),
                     Toast.LENGTH_SHORT).show();
-        }
-        else{
+        } else {
             // Otherwise, the insertion was successful and we can display a toast.
             Toast.makeText(this, getString(R.string.editor_insert_pet_successful),
                     Toast.LENGTH_SHORT).show();
