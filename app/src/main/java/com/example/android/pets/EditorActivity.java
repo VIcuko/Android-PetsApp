@@ -32,14 +32,11 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.android.pets.data.PetContract.PetEntry;
-import com.example.android.pets.data.PetDbHelper;
 
 /**
  * Allows user to create a new pet or edit an existing one.
  */
 public class EditorActivity extends AppCompatActivity {
-
-    private PetDbHelper mDbHelper;
 
     /**
      * EditText field to enter the pet's name
@@ -89,8 +86,6 @@ public class EditorActivity extends AppCompatActivity {
         mGenderSpinner = (Spinner) findViewById(R.id.spinner_gender);
 
         setupSpinner();
-
-        mDbHelper = new PetDbHelper(this);
     }
 
     /**
