@@ -70,7 +70,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
      */
     private int mGender = 0;
 
-    private Uri mcurrentPetUri;
+    private Uri mCurrentPetUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,7 +92,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             setTitle(getString(R.string.editor_activity_title_add_pet));
         } else {
             setTitle(getString(R.string.editor_activity_title_edit_pet));
-            mcurrentPetUri = currentPetUri;
+            mCurrentPetUri = currentPetUri;
             // Kick off loader
             getLoaderManager().initLoader(PET_LOADER, null, this);
         }
@@ -167,14 +167,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         return super.onOptionsItemSelected(item);
     }
 
-    private void savePet(){
-        if (){
-
-        }
-    }
-
-
-    private void insertPet() {
+    private void savePet() {
         String petName = !mNameEditText.getText().toString().trim().isEmpty() ? mNameEditText.getText().toString().trim() : null;
         String petBreed = !mBreedEditText.getText().toString().trim().isEmpty() ? mBreedEditText.getText().toString().trim() : null;
         int petGender = mGender;
@@ -187,18 +180,28 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         values.put(PetEntry.COLUMN_PET_GENDER, petGender);
         values.put(PetEntry.COLUMN_PET_WEIGHT, petWeight);
 
-        Uri newUri = getContentResolver().insert(PetEntry.CONTENT_URI, values);
-
-        if (newUri == null) {
-            // If the new content URI is null, then there was an error with insertion.
-            Toast.makeText(this, getString(R.string.editor_insert_pet_failed),
-                    Toast.LENGTH_SHORT).show();
+        if (mCurrentPetUri == null) {
+            Uri newUri = getContentResolver().insert(PetEntry.CONTENT_URI, values);
+            if (newUri == null) {
+                // If the new content URI is null, then there was an error with insertion.
+                Toast.makeText(this, getString(R.string.editor_insert_pet_failed),
+                        Toast.LENGTH_SHORT).show();
+            } else {
+                // Otherwise, the insertion was successful and we can display a toast.
+                Toast.makeText(this, getString(R.string.editor_insert_pet_successful),
+                        Toast.LENGTH_SHORT).show();
+            }
         } else {
-            // Otherwise, the insertion was successful and we can display a toast.
-            Toast.makeText(this, getString(R.string.editor_insert_pet_successful),
-                    Toast.LENGTH_SHORT).show();
+            int updatedLines = getContentResolver().update(mCurrentPetUri, values, null, null);
+            if (updatedLines > 0){
+                Toast.makeText(this, getString(R.string.editor_update_done),
+                        Toast.LENGTH_SHORT).show();
+            }
+            else{
+                Toast.makeText(this, getString(R.string.editor_update_none),
+                        Toast.LENGTH_SHORT).show();
+            }
         }
-
     }
 
     @Override
@@ -213,7 +216,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
 
         //This loader will execute the ContentProvider's query method on a background thread
         return new CursorLoader(this,
-                mcurrentPetUri,
+                mCurrentPetUri,
                 projection,
                 null,
                 null,
