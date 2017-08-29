@@ -178,8 +178,8 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
                 return true;
             // Respond to a click on the "Delete" menu option
             case R.id.action_delete:
-                deletePet();
-                finish();
+                // Show a dialog that notifies the users they are going to delete a pet
+                showDeleteConfirmationDialog();
                 return true;
             // Respond to a click on the "Up" arrow button in the app bar
             case android.R.id.home:
@@ -259,6 +259,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             Toast.makeText(this, getString(R.string.editor_deleted_none),
                     Toast.LENGTH_SHORT).show();
         }
+        finish();
     }
 
 
@@ -317,8 +318,6 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
     }
-
-
 
     @Override
     public void onBackPressed() {
