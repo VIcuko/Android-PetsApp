@@ -144,7 +144,7 @@ public class PetProvider extends ContentProvider {
             throw new IllegalArgumentException("Pet requires a breed");
         }
 
-        if (weight <= 0) {
+        if (weight < 0) {
             throw new IllegalArgumentException("Pet requires a weight");
         }
 
