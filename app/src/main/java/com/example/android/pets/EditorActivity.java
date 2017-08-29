@@ -180,26 +180,27 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         values.put(PetEntry.COLUMN_PET_GENDER, petGender);
         values.put(PetEntry.COLUMN_PET_WEIGHT, petWeight);
 
-        if (mCurrentPetUri == null) {
-            Uri newUri = getContentResolver().insert(PetEntry.CONTENT_URI, values);
-            if (newUri == null) {
-                // If the new content URI is null, then there was an error with insertion.
-                Toast.makeText(this, getString(R.string.editor_insert_pet_failed),
-                        Toast.LENGTH_SHORT).show();
+        if (!(petName == null && petBreed == null && petGender == 0 && petWeight == 0)) {
+            if (mCurrentPetUri == null) {
+                Uri newUri = getContentResolver().insert(PetEntry.CONTENT_URI, values);
+                if (newUri == null) {
+                    // If the new content URI is null, then there was an error with insertion.
+                    Toast.makeText(this, getString(R.string.editor_insert_pet_failed),
+                            Toast.LENGTH_SHORT).show();
+                } else {
+                    // Otherwise, the insertion was successful and we can display a toast.
+                    Toast.makeText(this, getString(R.string.editor_insert_pet_successful),
+                            Toast.LENGTH_SHORT).show();
+                }
             } else {
-                // Otherwise, the insertion was successful and we can display a toast.
-                Toast.makeText(this, getString(R.string.editor_insert_pet_successful),
-                        Toast.LENGTH_SHORT).show();
-            }
-        } else {
-            int updatedLines = getContentResolver().update(mCurrentPetUri, values, null, null);
-            if (updatedLines > 0){
-                Toast.makeText(this, getString(R.string.editor_update_done),
-                        Toast.LENGTH_SHORT).show();
-            }
-            else{
-                Toast.makeText(this, getString(R.string.editor_update_none),
-                        Toast.LENGTH_SHORT).show();
+                int updatedLines = getContentResolver().update(mCurrentPetUri, values, null, null);
+                if (updatedLines > 0) {
+                    Toast.makeText(this, getString(R.string.editor_update_done),
+                            Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(this, getString(R.string.editor_update_none),
+                            Toast.LENGTH_SHORT).show();
+                }
             }
         }
     }
