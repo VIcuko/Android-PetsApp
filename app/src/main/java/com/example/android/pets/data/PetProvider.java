@@ -140,12 +140,8 @@ public class PetProvider extends ContentProvider {
             throw new IllegalArgumentException("Pet requires a name");
         }
 
-        if (breed == null || breed.isEmpty()) {
-            throw new IllegalArgumentException("Pet requires a breed");
-        }
-
         if (weight < 0) {
-            throw new IllegalArgumentException("Pet requires a weight");
+            throw new IllegalArgumentException("Pet can\'t have negative weight");
         }
 
         // Get readable database

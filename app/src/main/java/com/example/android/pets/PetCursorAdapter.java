@@ -56,7 +56,8 @@ public class PetCursorAdapter extends CursorAdapter{
 
         // Extract properties from cursor
         String name = cursor.getString(cursor.getColumnIndexOrThrow("name"));
-        String summary = cursor.getString(cursor.getColumnIndexOrThrow("breed"));
+        String summary = !cursor.getString(cursor.getColumnIndexOrThrow("breed")).isEmpty() ?
+                cursor.getString(cursor.getColumnIndexOrThrow("breed")) : context.getResources().getString(R.string.unkown_breed);
 
         // Populate fields with extracted properties
         petName.setText(name);

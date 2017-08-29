@@ -88,4 +88,6 @@
     <string name="cancel">Cancel</string>
 
     <string name="delete_all_dialog_msg">Are you sure you want to delete all pets?</string>
+
+    <string name="unkown_breed">Unkown breed</string>
 </resources>

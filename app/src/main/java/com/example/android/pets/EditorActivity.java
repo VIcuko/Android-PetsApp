@@ -211,7 +211,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
 
     private void savePet() {
         String petName = !mNameEditText.getText().toString().trim().isEmpty() ? mNameEditText.getText().toString().trim() : null;
-        String petBreed = !mBreedEditText.getText().toString().trim().isEmpty() ? mBreedEditText.getText().toString().trim() : null;
+        String petBreed = !mBreedEditText.getText().toString().trim().isEmpty() ? mBreedEditText.getText().toString().trim() : "";
         int petGender = mGender;
         String weightString = !mWeightEditText.getText().toString().trim().isEmpty() ? mWeightEditText.getText().toString().trim() : "0";
         int petWeight = Integer.parseInt(weightString);
@@ -222,7 +222,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         values.put(PetEntry.COLUMN_PET_GENDER, petGender);
         values.put(PetEntry.COLUMN_PET_WEIGHT, petWeight);
 
-        if (!(petName == null && petBreed == null && petGender == PetEntry.GENDER_UNKNOWN && petWeight == 0)) {
+        if (!(petName == null && petBreed == "" && petGender == PetEntry.GENDER_UNKNOWN && petWeight == 0)) {
             if (mCurrentPetUri == null) {
                 Uri newUri = getContentResolver().insert(PetEntry.CONTENT_URI, values);
                 if (newUri == null) {
