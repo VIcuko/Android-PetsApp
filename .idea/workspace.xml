@@ -11,7 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="742a9ff9-d9a6-4d10-ab5d-90a804b1ab66" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java" />
     </list>
     <ignored path="PetsApp.iws" />
@@ -72,16 +81,16 @@
       <file leaf-file-name="EditorActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="233" column="32" selection-start-line="233" selection-start-column="32" selection-end-line="233" selection-end-column="32" />
+            <state relative-caret-position="294">
+              <caret line="170" column="8" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2837#2886#0" expanded="true" />
                 <element signature="e#2927#2977#0" expanded="true" />
                 <element signature="e#4319#4350#0" expanded="true" />
                 <element signature="e#4467#4500#0" expanded="true" />
-                <element signature="e#7171#7215#0" expanded="true" />
-                <element signature="e#7398#7446#0" expanded="true" />
+                <element signature="e#7214#7258#0" expanded="true" />
+                <element signature="e#7441#7489#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2458,8 +2467,8 @@
             <element signature="e#2927#2977#0" expanded="true" />
             <element signature="e#4319#4350#0" expanded="true" />
             <element signature="e#4467#4500#0" expanded="true" />
-            <element signature="e#7171#7215#0" expanded="true" />
-            <element signature="e#7398#7446#0" expanded="true" />
+            <element signature="e#7214#7258#0" expanded="true" />
+            <element signature="e#7441#7489#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2521,8 +2530,8 @@
             <element signature="e#2927#2977#0" expanded="true" />
             <element signature="e#4319#4350#0" expanded="true" />
             <element signature="e#4467#4500#0" expanded="true" />
-            <element signature="e#7171#7215#0" expanded="true" />
-            <element signature="e#7398#7446#0" expanded="true" />
+            <element signature="e#7214#7258#0" expanded="true" />
+            <element signature="e#7441#7489#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2822,16 +2831,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="233" column="32" selection-start-line="233" selection-start-column="32" selection-end-line="233" selection-end-column="32" />
+        <state relative-caret-position="294">
+          <caret line="170" column="8" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2837#2886#0" expanded="true" />
             <element signature="e#2927#2977#0" expanded="true" />
             <element signature="e#4319#4350#0" expanded="true" />
             <element signature="e#4467#4500#0" expanded="true" />
-            <element signature="e#7171#7215#0" expanded="true" />
-            <element signature="e#7398#7446#0" expanded="true" />
+            <element signature="e#7214#7258#0" expanded="true" />
+            <element signature="e#7441#7489#0" expanded="true" />
           </folding>
         </state>
       </provider>

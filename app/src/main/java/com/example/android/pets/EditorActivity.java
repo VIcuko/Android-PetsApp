@@ -151,7 +151,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         switch (item.getItemId()) {
             // Respond to a click on the "Save" menu option
             case R.id.action_save:
-                insertPet();
+                savePet();
                 finish();
                 return true;
             // Respond to a click on the "Delete" menu option
@@ -166,6 +166,13 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         }
         return super.onOptionsItemSelected(item);
     }
+
+    private void savePet(){
+        if (){
+
+        }
+    }
+
 
     private void insertPet() {
         String petName = !mNameEditText.getText().toString().trim().isEmpty() ? mNameEditText.getText().toString().trim() : null;
