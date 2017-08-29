@@ -77,6 +77,10 @@
     <string name="editor_activity_title_add_pet">Add a Pet</string>
     <string name="editor_activity_title_edit_pet">Edit Pet</string>
 
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+
 
 
 </resources>
