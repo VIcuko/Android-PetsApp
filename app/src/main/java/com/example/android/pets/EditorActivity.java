@@ -17,6 +17,7 @@ package com.example.android.pets;
 
 import android.app.LoaderManager;
 import android.content.ContentValues;
+import android.content.CursorLoader;
 import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
@@ -39,7 +40,9 @@ import com.example.android.pets.data.PetContract.PetEntry;
 /**
  * Allows user to create a new pet or edit an existing one.
  */
-public class EditorActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>{
+public class EditorActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
+
+    private static final int PET_LOADER = 1;
 
     /**
      * EditText field to enter the pet's name
@@ -67,6 +70,8 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
      */
     private int mGender = 0;
 
+    private Uri mcurrentPetUri;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,13 +80,6 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         Intent intent = getIntent();
         Uri currentPetUri = intent.getData();
 
-        if (currentPetUri == null) {
-            setTitle(getString(R.string.editor_activity_title_add_pet));
-        } else {
-            setTitle(getString(R.string.editor_activity_title_edit_pet));
-        }
-
-
         // Find all relevant views that we will need to read user input from
         mNameEditText = (EditText) findViewById(R.id.edit_pet_name);
         mBreedEditText = (EditText) findViewById(R.id.edit_pet_breed);
@@ -89,6 +87,15 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         mGenderSpinner = (Spinner) findViewById(R.id.spinner_gender);
 
         setupSpinner();
+
+        if (currentPetUri == null) {
+            setTitle(getString(R.string.editor_activity_title_add_pet));
+        } else {
+            setTitle(getString(R.string.editor_activity_title_edit_pet));
+            mcurrentPetUri = currentPetUri;
+            // Kick off loader
+            getLoaderManager().initLoader(PET_LOADER, null, this);
+        }
     }
 
     /**
@@ -188,17 +195,60 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
     }
 
     @Override
-    public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
-        return null;
+    public Loader<Cursor> onCreateLoader(int i, Bundle budle) {
+        // Define a projection that specifies the columns of the table we're interested in.
+        String[] projection = {
+                PetEntry._ID,
+                PetEntry.COLUMN_PET_NAME,
+                PetEntry.COLUMN_PET_BREED,
+                PetEntry.COLUMN_PET_GENDER,
+                PetEntry.COLUMN_PET_WEIGHT};
+
+        //This loader will execute the ContentProvider's query method on a background thread
+        return new CursorLoader(this,
+                mcurrentPetUri,
+                projection,
+                null,
+                null,
+                null
+        );
     }
 
     @Override
-    public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
+    public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+        // Proceed with moving to the first row of the cursor and reading data from it
+        // (This should be the only row in the cursor)
+        if (data.moveToFirst()) {
 
+            int nameColumn = data.getColumnIndex(PetEntry.COLUMN_PET_NAME);
+            int breedColumn = data.getColumnIndex(PetEntry.COLUMN_PET_BREED);
+            int genderColumn = data.getColumnIndex(PetEntry.COLUMN_PET_GENDER);
+            int weightColumn = data.getColumnIndex(PetEntry.COLUMN_PET_WEIGHT);
+
+            // Here we handle the data received in the Cursor
+            mNameEditText.setText(data.getString(nameColumn));
+            mBreedEditText.setText(data.getString(breedColumn));
+            mWeightEditText.setText(Integer.toString(data.getInt(weightColumn)));
+
+            switch (data.getInt(genderColumn)) {
+                case PetEntry.GENDER_MALE:
+                    mGenderSpinner.setSelection(1);
+                    break;
+                case PetEntry.GENDER_FEMALE:
+                    mGenderSpinner.setSelection(2);
+                    break;
+                default:
+                    mGenderSpinner.setSelection(0);
+                    break;
+            }
+        }
     }
 
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
-
+        mNameEditText.setText("");
+        mBreedEditText.setText("");
+        mGenderSpinner.setSelection(PetEntry.GENDER_UNKNOWN);
+        mWeightEditText.setText("");
     }
 }
