@@ -11,12 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="742a9ff9-d9a6-4d10-ab5d-90a804b1ab66" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java" />
     </list>
@@ -76,18 +70,18 @@
       <file leaf-file-name="EditorActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="204" column="9" selection-start-line="204" selection-start-column="9" selection-end-line="204" selection-end-column="9" />
+            <state relative-caret-position="133">
+              <caret line="182" column="89" selection-start-line="182" selection-start-column="89" selection-end-line="182" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2837#2886#0" expanded="true" />
                 <element signature="e#2927#2977#0" expanded="true" />
                 <element signature="e#4319#4350#0" expanded="true" />
                 <element signature="e#4467#4500#0" expanded="true" />
-                <element signature="e#7330#7374#0" expanded="true" />
-                <element signature="e#7589#7637#0" expanded="true" />
-                <element signature="e#7915#7953#0" expanded="true" />
-                <element signature="e#8077#8115#0" expanded="true" />
+                <element signature="e#7352#7396#0" expanded="true" />
+                <element signature="e#7611#7659#0" expanded="true" />
+                <element signature="e#7937#7975#0" expanded="true" />
+                <element signature="e#8099#8137#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2462,10 +2456,10 @@
             <element signature="e#2927#2977#0" expanded="true" />
             <element signature="e#4319#4350#0" expanded="true" />
             <element signature="e#4467#4500#0" expanded="true" />
-            <element signature="e#7330#7374#0" expanded="true" />
-            <element signature="e#7589#7637#0" expanded="true" />
-            <element signature="e#7915#7953#0" expanded="true" />
-            <element signature="e#8077#8115#0" expanded="true" />
+            <element signature="e#7352#7396#0" expanded="true" />
+            <element signature="e#7611#7659#0" expanded="true" />
+            <element signature="e#7937#7975#0" expanded="true" />
+            <element signature="e#8099#8137#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2525,10 +2519,10 @@
             <element signature="e#2927#2977#0" expanded="true" />
             <element signature="e#4319#4350#0" expanded="true" />
             <element signature="e#4467#4500#0" expanded="true" />
-            <element signature="e#7330#7374#0" expanded="true" />
-            <element signature="e#7589#7637#0" expanded="true" />
-            <element signature="e#7915#7953#0" expanded="true" />
-            <element signature="e#8077#8115#0" expanded="true" />
+            <element signature="e#7352#7396#0" expanded="true" />
+            <element signature="e#7611#7659#0" expanded="true" />
+            <element signature="e#7937#7975#0" expanded="true" />
+            <element signature="e#8099#8137#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2828,18 +2822,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="204" column="9" selection-start-line="204" selection-start-column="9" selection-end-line="204" selection-end-column="9" />
+        <state relative-caret-position="133">
+          <caret line="182" column="89" selection-start-line="182" selection-start-column="89" selection-end-line="182" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2837#2886#0" expanded="true" />
             <element signature="e#2927#2977#0" expanded="true" />
             <element signature="e#4319#4350#0" expanded="true" />
             <element signature="e#4467#4500#0" expanded="true" />
-            <element signature="e#7330#7374#0" expanded="true" />
-            <element signature="e#7589#7637#0" expanded="true" />
-            <element signature="e#7915#7953#0" expanded="true" />
-            <element signature="e#8077#8115#0" expanded="true" />
+            <element signature="e#7352#7396#0" expanded="true" />
+            <element signature="e#7611#7659#0" expanded="true" />
+            <element signature="e#7937#7975#0" expanded="true" />
+            <element signature="e#8099#8137#0" expanded="true" />
           </folding>
         </state>
       </provider>

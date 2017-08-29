@@ -180,7 +180,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         values.put(PetEntry.COLUMN_PET_GENDER, petGender);
         values.put(PetEntry.COLUMN_PET_WEIGHT, petWeight);
 
-        if (!(petName == null && petBreed == null && petGender == 0 && petWeight == 0)) {
+        if (!(petName == null && petBreed == null && petGender == PetEntry.GENDER_UNKNOWN && petWeight == 0)) {
             if (mCurrentPetUri == null) {
                 Uri newUri = getContentResolver().insert(PetEntry.CONTENT_URI, values);
                 if (newUri == null) {
