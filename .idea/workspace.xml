@@ -70,18 +70,29 @@
       <file leaf-file-name="EditorActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="182" column="89" selection-start-line="182" selection-start-column="89" selection-end-line="182" selection-end-column="89" />
+            <state relative-caret-position="399">
+              <caret line="193" column="28" selection-start-line="193" selection-start-column="28" selection-end-line="193" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2837#2886#0" expanded="true" />
-                <element signature="e#2927#2977#0" expanded="true" />
-                <element signature="e#4319#4350#0" expanded="true" />
-                <element signature="e#4467#4500#0" expanded="true" />
-                <element signature="e#7352#7396#0" expanded="true" />
-                <element signature="e#7611#7659#0" expanded="true" />
-                <element signature="e#7937#7975#0" expanded="true" />
-                <element signature="e#8099#8137#0" expanded="true" />
+                <element signature="e#3224#3273#0" expanded="true" />
+                <element signature="e#3314#3364#0" expanded="true" />
+                <element signature="e#4706#4737#0" expanded="true" />
+                <element signature="e#4854#4887#0" expanded="true" />
+                <element signature="e#6933#7337#0" expanded="true" />
+                <element signature="e#7336#7337#0" expanded="true" />
+                <element signature="e#8807#8851#0" expanded="true" />
+                <element signature="e#9066#9114#0" expanded="true" />
+                <element signature="e#9392#9430#0" expanded="true" />
+                <element signature="e#9554#9592#0" expanded="true" />
+                <element signature="e#9749#9941#0" expanded="true" />
+                <element signature="e#9940#9941#0" expanded="true" />
+                <element signature="e#10303#10338#0" expanded="true" />
+                <element signature="e#10375#10391#0" expanded="true" />
+                <element signature="e#10456#10477#0" expanded="true" />
+                <element signature="e#10479#10832#0" expanded="true" />
+                <element signature="e#10831#10832#0" expanded="true" />
+                <element signature="e#11458#11769#0" expanded="true" />
+                <element signature="e#11768#11769#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,8 +114,8 @@
       <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="372">
+              <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -1870,8 +1881,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_catalog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/CatalogActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/data/PetProvider.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java" />
       </list>
     </option>
@@ -2452,14 +2463,25 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2837#2886#0" expanded="true" />
-            <element signature="e#2927#2977#0" expanded="true" />
-            <element signature="e#4319#4350#0" expanded="true" />
-            <element signature="e#4467#4500#0" expanded="true" />
-            <element signature="e#7352#7396#0" expanded="true" />
-            <element signature="e#7611#7659#0" expanded="true" />
-            <element signature="e#7937#7975#0" expanded="true" />
-            <element signature="e#8099#8137#0" expanded="true" />
+            <element signature="e#3224#3273#0" expanded="true" />
+            <element signature="e#3314#3364#0" expanded="true" />
+            <element signature="e#4706#4737#0" expanded="true" />
+            <element signature="e#4854#4887#0" expanded="true" />
+            <element signature="e#6933#7337#0" expanded="true" />
+            <element signature="e#7336#7337#0" expanded="true" />
+            <element signature="e#8807#8851#0" expanded="true" />
+            <element signature="e#9066#9114#0" expanded="true" />
+            <element signature="e#9392#9430#0" expanded="true" />
+            <element signature="e#9554#9592#0" expanded="true" />
+            <element signature="e#9749#9941#0" expanded="true" />
+            <element signature="e#9940#9941#0" expanded="true" />
+            <element signature="e#10303#10338#0" expanded="true" />
+            <element signature="e#10375#10391#0" expanded="true" />
+            <element signature="e#10456#10477#0" expanded="true" />
+            <element signature="e#10479#10832#0" expanded="true" />
+            <element signature="e#10831#10832#0" expanded="true" />
+            <element signature="e#11458#11769#0" expanded="true" />
+            <element signature="e#11768#11769#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2515,14 +2537,25 @@
           <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2837#2886#0" expanded="true" />
-            <element signature="e#2927#2977#0" expanded="true" />
-            <element signature="e#4319#4350#0" expanded="true" />
-            <element signature="e#4467#4500#0" expanded="true" />
-            <element signature="e#7352#7396#0" expanded="true" />
-            <element signature="e#7611#7659#0" expanded="true" />
-            <element signature="e#7937#7975#0" expanded="true" />
-            <element signature="e#8099#8137#0" expanded="true" />
+            <element signature="e#3224#3273#0" expanded="true" />
+            <element signature="e#3314#3364#0" expanded="true" />
+            <element signature="e#4706#4737#0" expanded="true" />
+            <element signature="e#4854#4887#0" expanded="true" />
+            <element signature="e#6933#7337#0" expanded="true" />
+            <element signature="e#7336#7337#0" expanded="true" />
+            <element signature="e#8807#8851#0" expanded="true" />
+            <element signature="e#9066#9114#0" expanded="true" />
+            <element signature="e#9392#9430#0" expanded="true" />
+            <element signature="e#9554#9592#0" expanded="true" />
+            <element signature="e#9749#9941#0" expanded="true" />
+            <element signature="e#9940#9941#0" expanded="true" />
+            <element signature="e#10303#10338#0" expanded="true" />
+            <element signature="e#10375#10391#0" expanded="true" />
+            <element signature="e#10456#10477#0" expanded="true" />
+            <element signature="e#10479#10832#0" expanded="true" />
+            <element signature="e#10831#10832#0" expanded="true" />
+            <element signature="e#11458#11769#0" expanded="true" />
+            <element signature="e#11768#11769#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2794,14 +2827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-24/android.jar!/android/content/ContentProvider.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -2820,20 +2845,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="182" column="89" selection-start-line="182" selection-start-column="89" selection-end-line="182" selection-end-column="89" />
+        <state relative-caret-position="399">
+          <caret line="193" column="28" selection-start-line="193" selection-start-column="28" selection-end-line="193" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2837#2886#0" expanded="true" />
-            <element signature="e#2927#2977#0" expanded="true" />
-            <element signature="e#4319#4350#0" expanded="true" />
-            <element signature="e#4467#4500#0" expanded="true" />
-            <element signature="e#7352#7396#0" expanded="true" />
-            <element signature="e#7611#7659#0" expanded="true" />
-            <element signature="e#7937#7975#0" expanded="true" />
-            <element signature="e#8099#8137#0" expanded="true" />
+            <element signature="e#3224#3273#0" expanded="true" />
+            <element signature="e#3314#3364#0" expanded="true" />
+            <element signature="e#4706#4737#0" expanded="true" />
+            <element signature="e#4854#4887#0" expanded="true" />
+            <element signature="e#6933#7337#0" expanded="true" />
+            <element signature="e#7336#7337#0" expanded="true" />
+            <element signature="e#8807#8851#0" expanded="true" />
+            <element signature="e#9066#9114#0" expanded="true" />
+            <element signature="e#9392#9430#0" expanded="true" />
+            <element signature="e#9554#9592#0" expanded="true" />
+            <element signature="e#9749#9941#0" expanded="true" />
+            <element signature="e#9940#9941#0" expanded="true" />
+            <element signature="e#10303#10338#0" expanded="true" />
+            <element signature="e#10375#10391#0" expanded="true" />
+            <element signature="e#10456#10477#0" expanded="true" />
+            <element signature="e#10479#10832#0" expanded="true" />
+            <element signature="e#10831#10832#0" expanded="true" />
+            <element signature="e#11458#11769#0" expanded="true" />
+            <element signature="e#11768#11769#0" expanded="true" />
           </folding>
         </state>
       </provider>
