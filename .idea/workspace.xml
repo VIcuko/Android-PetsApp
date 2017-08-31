@@ -11,8 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="742a9ff9-d9a6-4d10-ab5d-90a804b1ab66" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/PetCursorAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/PetCursorAdapter.java" />
     </list>
     <ignored path="PetsApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,14 +48,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PetProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/data/PetProvider.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="140" column="9" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="445">
+              <caret line="42" column="19" selection-start-line="38" selection-start-column="8" selection-end-line="42" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,37 +73,75 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="activity_catalog.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_catalog.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_editor.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editor.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-215">
+              <caret line="79" column="33" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="25" column="12" selection-start-line="21" selection-start-column="4" selection-end-line="25" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_item.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CatalogActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/CatalogActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="54" column="76" selection-start-line="54" selection-start-column="71" selection-end-line="54" selection-end-column="76" />
+            <state relative-caret-position="255">
+              <caret line="54" column="28" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4789#4837#0" expanded="true" />
-                <element signature="e#4916#4960#0" expanded="true" />
-                <element signature="e#5269#5308#0" expanded="true" />
-                <element signature="e#5408#5447#0" expanded="true" />
-                <element signature="e#5806#5836#0" expanded="true" />
-                <element signature="e#5873#5888#0" expanded="true" />
-                <element signature="e#5890#6124#0" expanded="true" />
-                <element signature="e#6123#6124#0" expanded="true" />
-                <element signature="e#6161#6176#0" expanded="true" />
-                <element signature="e#6178#6525#0" expanded="true" />
-                <element signature="e#6524#6525#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PetCursorAdapter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PetCursorAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/PetCursorAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
+            <state relative-caret-position="795">
               <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2281#2321#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="false" />
+                <element signature="e#659#660#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -108,37 +150,10 @@
       <file leaf-file-name="EditorActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="1305">
               <caret line="101" column="39" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="39" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3351#3401#0" expanded="true" />
-                <element signature="e#4743#4774#0" expanded="true" />
-                <element signature="e#4891#4924#0" expanded="true" />
-                <element signature="e#7422#7826#0" expanded="true" />
-                <element signature="e#7825#7826#0" expanded="true" />
-                <element signature="e#9292#9336#0" expanded="true" />
-                <element signature="e#9551#9599#0" expanded="true" />
-                <element signature="e#9877#9915#0" expanded="true" />
-                <element signature="e#10039#10077#0" expanded="true" />
-                <element signature="e#10436#10475#0" expanded="true" />
-                <element signature="e#10575#10614#0" expanded="true" />
-                <element signature="e#10750#10942#0" expanded="true" />
-                <element signature="e#10941#10942#0" expanded="true" />
-                <element signature="e#11304#11339#0" expanded="true" />
-                <element signature="e#11376#11392#0" expanded="true" />
-                <element signature="e#11457#11478#0" expanded="true" />
-                <element signature="e#11480#11833#0" expanded="true" />
-                <element signature="e#11832#11833#0" expanded="true" />
-                <element signature="e#12259#12285#0" expanded="true" />
-                <element signature="e#12322#12337#0" expanded="true" />
-                <element signature="e#12339#12569#0" expanded="true" />
-                <element signature="e#12568#12569#0" expanded="true" />
-                <element signature="e#12606#12621#0" expanded="true" />
-                <element signature="e#12623#12970#0" expanded="true" />
-                <element signature="e#12969#12970#0" expanded="true" />
-                <element signature="e#13596#13907#0" expanded="true" />
-                <element signature="e#13906#13907#0" expanded="true" />
+                <element signature="e#0#16238#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -147,7 +162,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="1365">
               <caret line="91" column="53" selection-start-line="91" selection-start-column="53" selection-end-line="91" selection-end-column="53" />
               <folding />
             </state>
@@ -1557,7 +1572,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4509215059000" />
+        <entry key="$PROJECT_DIR$" value="4510249305000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1909,14 +1924,15 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/data/PetDbHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/data/PetContract.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_catalog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/CatalogActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/data/PetProvider.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/pets/PetCursorAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_catalog.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
       </list>
     </option>
   </component>
@@ -1949,10 +1965,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1995,6 +2009,14 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mipmap" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ic_launcher.png" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2043,12 +2065,8 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pets" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2067,10 +2085,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="pets" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2089,6 +2103,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2431,7 +2447,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.50572246" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.49427754" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287841" sideWeight="0.49713877" order="12" side_tool="false" content_ui="tabs" />
@@ -2482,118 +2498,10 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/data/PetProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/CatalogActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="83" column="36" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4789#4837#0" expanded="true" />
-            <element signature="e#4916#4960#0" expanded="true" />
-            <element signature="e#5269#5308#0" expanded="true" />
-            <element signature="e#5408#5447#0" expanded="true" />
-            <element signature="e#5806#5836#0" expanded="true" />
-            <element signature="e#5873#5888#0" expanded="true" />
-            <element signature="e#5890#6124#0" expanded="true" />
-            <element signature="e#6123#6124#0" expanded="true" />
-            <element signature="e#6161#6176#0" expanded="true" />
-            <element signature="e#6178#6525#0" expanded="true" />
-            <element signature="e#6524#6525#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3351#3401#0" expanded="true" />
-            <element signature="e#4743#4774#0" expanded="true" />
-            <element signature="e#4891#4924#0" expanded="true" />
-            <element signature="e#7422#7826#0" expanded="true" />
-            <element signature="e#7825#7826#0" expanded="true" />
-            <element signature="e#9292#9336#0" expanded="true" />
-            <element signature="e#9551#9599#0" expanded="true" />
-            <element signature="e#9877#9915#0" expanded="true" />
-            <element signature="e#10039#10077#0" expanded="true" />
-            <element signature="e#10436#10475#0" expanded="true" />
-            <element signature="e#10575#10614#0" expanded="true" />
-            <element signature="e#10750#10942#0" expanded="true" />
-            <element signature="e#10941#10942#0" expanded="true" />
-            <element signature="e#11304#11339#0" expanded="true" />
-            <element signature="e#11376#11392#0" expanded="true" />
-            <element signature="e#11457#11478#0" expanded="true" />
-            <element signature="e#11480#11833#0" expanded="true" />
-            <element signature="e#11832#11833#0" expanded="true" />
-            <element signature="e#12259#12285#0" expanded="true" />
-            <element signature="e#12322#12337#0" expanded="true" />
-            <element signature="e#12339#12569#0" expanded="true" />
-            <element signature="e#12568#12569#0" expanded="true" />
-            <element signature="e#12606#12621#0" expanded="true" />
-            <element signature="e#12623#12970#0" expanded="true" />
-            <element signature="e#12969#12970#0" expanded="true" />
-            <element signature="e#13596#13907#0" expanded="true" />
-            <element signature="e#13906#13907#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_catalog.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="75" column="54" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/CatalogActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="38" column="34" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4789#4837#0" expanded="true" />
-            <element signature="e#4916#4960#0" expanded="true" />
-            <element signature="e#5269#5308#0" expanded="true" />
-            <element signature="e#5408#5447#0" expanded="true" />
-            <element signature="e#5806#5836#0" expanded="true" />
-            <element signature="e#5873#5888#0" expanded="true" />
-            <element signature="e#5890#6124#0" expanded="true" />
-            <element signature="e#6123#6124#0" expanded="true" />
-            <element signature="e#6161#6176#0" expanded="true" />
-            <element signature="e#6178#6525#0" expanded="true" />
-            <element signature="e#6524#6525#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/data/PetProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2611,34 +2519,7 @@
         <state relative-caret-position="1860">
           <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3351#3401#0" expanded="true" />
-            <element signature="e#4743#4774#0" expanded="true" />
-            <element signature="e#4891#4924#0" expanded="true" />
-            <element signature="e#7422#7826#0" expanded="true" />
-            <element signature="e#7825#7826#0" expanded="true" />
-            <element signature="e#9292#9336#0" expanded="true" />
-            <element signature="e#9551#9599#0" expanded="true" />
-            <element signature="e#9877#9915#0" expanded="true" />
-            <element signature="e#10039#10077#0" expanded="true" />
-            <element signature="e#10436#10475#0" expanded="true" />
-            <element signature="e#10575#10614#0" expanded="true" />
-            <element signature="e#10750#10942#0" expanded="true" />
-            <element signature="e#10941#10942#0" expanded="true" />
-            <element signature="e#11304#11339#0" expanded="true" />
-            <element signature="e#11376#11392#0" expanded="true" />
-            <element signature="e#11457#11478#0" expanded="true" />
-            <element signature="e#11480#11833#0" expanded="true" />
-            <element signature="e#11832#11833#0" expanded="true" />
-            <element signature="e#12259#12285#0" expanded="true" />
-            <element signature="e#12322#12337#0" expanded="true" />
-            <element signature="e#12339#12569#0" expanded="true" />
-            <element signature="e#12568#12569#0" expanded="true" />
-            <element signature="e#12606#12621#0" expanded="true" />
-            <element signature="e#12623#12970#0" expanded="true" />
-            <element signature="e#12969#12970#0" expanded="true" />
-            <element signature="e#13596#13907#0" expanded="true" />
-            <element signature="e#13906#13907#0" expanded="true" />
+            <element signature="e#0#16238#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2667,17 +2548,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4789#4837#0" expanded="true" />
-            <element signature="e#4916#4960#0" expanded="true" />
-            <element signature="e#5269#5308#0" expanded="true" />
-            <element signature="e#5408#5447#0" expanded="true" />
-            <element signature="e#5806#5836#0" expanded="true" />
-            <element signature="e#5873#5888#0" expanded="true" />
-            <element signature="e#5890#6124#0" expanded="true" />
-            <element signature="e#6123#6124#0" expanded="true" />
-            <element signature="e#6161#6176#0" expanded="true" />
-            <element signature="e#6178#6525#0" expanded="true" />
-            <element signature="e#6524#6525#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2810,9 +2680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding>
-            <element signature="e#6747#6748#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2831,19 +2698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#248#272#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-24/android.jar!/android/content/ContentResolver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -2851,33 +2705,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-24/android.jar!/android/content/ContentProvider.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editor.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2888,17 +2719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_catalog.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2919,8 +2739,121 @@
         <state relative-caret-position="249">
           <caret line="140" column="9" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
           <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="101" column="39" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#16238#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="53" selection-start-line="91" selection-start-column="53" selection-end-line="91" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/PetCursorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+          <folding>
+            <element signature="e#611#612#0" expanded="false" />
+            <element signature="e#659#660#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_done.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_empty_shelter.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/CatalogActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="28" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_catalog.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_editor.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-215">
+          <caret line="79" column="33" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2934,80 +2867,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/CatalogActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="54" column="76" selection-start-line="54" selection-start-column="71" selection-end-line="54" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4789#4837#0" expanded="true" />
-            <element signature="e#4916#4960#0" expanded="true" />
-            <element signature="e#5269#5308#0" expanded="true" />
-            <element signature="e#5408#5447#0" expanded="true" />
-            <element signature="e#5806#5836#0" expanded="true" />
-            <element signature="e#5873#5888#0" expanded="true" />
-            <element signature="e#5890#6124#0" expanded="true" />
-            <element signature="e#6123#6124#0" expanded="true" />
-            <element signature="e#6161#6176#0" expanded="true" />
-            <element signature="e#6178#6525#0" expanded="true" />
-            <element signature="e#6524#6525#0" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/EditorActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="101" column="39" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3351#3401#0" expanded="true" />
-            <element signature="e#4743#4774#0" expanded="true" />
-            <element signature="e#4891#4924#0" expanded="true" />
-            <element signature="e#7422#7826#0" expanded="true" />
-            <element signature="e#7825#7826#0" expanded="true" />
-            <element signature="e#9292#9336#0" expanded="true" />
-            <element signature="e#9551#9599#0" expanded="true" />
-            <element signature="e#9877#9915#0" expanded="true" />
-            <element signature="e#10039#10077#0" expanded="true" />
-            <element signature="e#10436#10475#0" expanded="true" />
-            <element signature="e#10575#10614#0" expanded="true" />
-            <element signature="e#10750#10942#0" expanded="true" />
-            <element signature="e#10941#10942#0" expanded="true" />
-            <element signature="e#11304#11339#0" expanded="true" />
-            <element signature="e#11376#11392#0" expanded="true" />
-            <element signature="e#11457#11478#0" expanded="true" />
-            <element signature="e#11480#11833#0" expanded="true" />
-            <element signature="e#11832#11833#0" expanded="true" />
-            <element signature="e#12259#12285#0" expanded="true" />
-            <element signature="e#12322#12337#0" expanded="true" />
-            <element signature="e#12339#12569#0" expanded="true" />
-            <element signature="e#12568#12569#0" expanded="true" />
-            <element signature="e#12606#12621#0" expanded="true" />
-            <element signature="e#12623#12970#0" expanded="true" />
-            <element signature="e#12969#12970#0" expanded="true" />
-            <element signature="e#13596#13907#0" expanded="true" />
-            <element signature="e#13906#13907#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="91" column="53" selection-start-line="91" selection-start-column="53" selection-end-line="91" selection-end-column="53" />
+        <state relative-caret-position="445">
+          <caret line="42" column="19" selection-start-line="38" selection-start-column="8" selection-end-line="42" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/pets/PetCursorAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2281#2321#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="162">
+          <caret line="25" column="12" selection-start-line="21" selection-start-column="4" selection-end-line="25" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
